@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>yogesh muppiri</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<style>
+marquee {
+        width: 100%;
+        padding: 10px 0;
+        background-color: red;
+      }
+img {
+  float: right;
+}
+</style>
+ <style>
+        /* Common styles for all screen sizes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* Styles for larger screens (desktop) */
+        @media screen and (min-width: 768px) {
+            header {
+                font-size: 24px;
+            }
+        }
+        
+        /* Styles for medium-sized screens (tablet) */
+        @media screen and (max-width: 767px) and (min-width: 481px) {
+            header {
+                font-size: 20px;
+            }
+        }
+        
+        /* Styles for smaller screens (mobile) */
+        @media screen and (max-width: 480px) {
+            header {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="menu-bar">
+            <ul>
+                <li class="active"><a href="index.html"><i class="fa fa-home"></i>HOME</a></i></li>
+                <li><a href="portfolio.html"><i class="fa fa-tasks"></i>PORTFOLIO</a></li>
+                <li><a href="myclicks.html"><i class="fa fa-camera-retro"></i>PHOTOGRAPHY</li>
+                <li><a href="about.html"><i class="fa fa-user"></i>ABOUT</a> </li>
+                <li><a href="contact.html"><i class="fa fa-user-circle"></i>CONTACT</a></li>
+            </ul>
+    </div>
+
+
+    <marquee behavior="alternate">WELCOME TO MY PROFILE!!</marquee>
+
+<img src="profilephoto.jpeg" alt="image" style="width:340px;height:450px;margin-left:15px;">
+
+<p style="color: BLACK; font-size:15px">
+hello! crowd world
+This is <strong>Yogesh Muppiri</strong>
+“In each day, there are 1,440 minutes. That means we have 1,440 daily opportunities to make a positive impact.” I stumbled upon this quote by Les Brown during my days and it has since left a mark on me. It has helped me understand the importance of being productive throughout the day and perpetually look out for opportunities and solutions. I have always loved identifying patterns and solving problems.
+I am currently pursuing my Master's in Business Analytics from the University of Texas at Dallas. I am an aspiring Business analyst and highly motivated individual excited to derive valuable insights for Businesses from exploring and analysing large volumes of data. My expertise includes data analysis and interpretation and the development and implementation of research tools. I am greatly skilled and experienced in building supervised and unsupervised models for solving real-life classification and regression problems. I enjoy generating new ideas and devising feasible solutions to broadly relevant problems. People would describe me as a driven, resourceful individual who maintains a positive, proactive attitude. 
+My innate ability to observe patterns and curiosity to seek out the story behind them led me to become a business analyst. Using statistics and ML models to build predictive and classification models is the best part for me because it makes the future less unpredictable. My short-term goal is to work as a Data Scientist/Analyst in an industry where I can give back to the community. In the long-term, I'd love to lead a team of like-minded Analysts who help the community and impactful organizations like WHO and the UN.
+In my free time, I like to work out and learn new information from the internet/social media. When I’m down I love working out because it has taught me that “if you are consistent, you will get the results”. And I am more interested in learning new information from the internet/social media.
+</h3></p>
+<br>
+    <span class = "wordText";
+         onmouseover = "this.style.color = '#ff0080'; 
+                        this.style.fontStyle = 'italic';
+                        this.style.fontSize = '15pt';"
+         onmouseout = "this.style.color = '#0080ff';
+                       this.style.fontStyle = 'bold';
+                       this.style.fontSize = '15pt';">
+        <h4>"The bad news is time flies. The good news is you're the pilot".</h4>
+      </span>
+<center><br><br><br>
+<p style="color:orange;" id="demo">
+</p>
+
+<body>    <p id="datetime"></p>
+
+    <script>
+        function updateTime() {
+            const cstTime = new Date().toLocaleString("en-US", {
+                timeZone: "America/Chicago",
+            });
+          document.getElementById("datetime").textContent = "" + cstTime;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+
+</center>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+ <title>login</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+function confirmInput() {
+  fname = document.forms[0].fname.value;
+  alert("Hello " + fname + "! You will now be redirected to home page");
+}
+</script>
+</head>
+<body>
+    <div class="menu-bar">
+            <ul>
+                <li class="active"><a href="index.html"><i class="fa fa-home"></i>HOME</a></i></li>
+                <li><a href="portfolio.html"><i class="fa fa-tasks"></i>PORTFOLIO</a></li>
+                <li><a href="gallery.html"><i class="fa fa-picture-o"></i>GALLERY</a></li>
+                <li><a href="myclicks.html"><i class="fa fa-camera-retro"></i>MY CLICKS</li>
+                <li><a href="about.html"><i class="fa fa-user"></i>ABOUT</a> </li>
+                <li><a href="contact.html"><i class="fa fa-user-circle"></i>CONTACT</a></li>
+            </ul>
+    </div>
+<center><form onsubmit="confirmInput()" action="index.html">
+Enter your mobile number: <input id="fname" type="integer" size="20">
+<br>
+<br>
+Enter your name: <input id="fname" type="text" size="20"><br>
+  <input type="submit">
+</form>
+</center>
+</body>
+</html>
